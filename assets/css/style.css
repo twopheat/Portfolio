@@ -1,5 +1,5 @@
 body {
-    background-image: url("../images/bkg.png");
+    background-image: url("../images/bkggold.png");
     background-size:auto;
     background-color:#fff;
     margin:0 0 0 0;
@@ -9,8 +9,19 @@ a {
     color:#fff;
 }
 h1 {
-    color:#062761;
-    border-bottom:5px solid gray;
+    color:rgb(78, 78, 78);
+    border-bottom:2px solid rgba(128, 128, 128, 0.205);
+    text-align:center;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+h3 {
+    text-align:center;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
+}
+p {
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+
 }
 #me {
     width:30%;
@@ -22,52 +33,118 @@ h1 {
 }
 #floattext {
     float: right;
-    width: 68%;
+    width: 65%;
+    padding:14px;
+    font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    overflow-wrap: break-word;
 }
 #pagetitle {
     font-size:30px;
     font-weight:bold;
     font-family:'Times New Roman', Times, serif;
     padding-top:20px;
+    color:#fdd600;
+}
+.ptitle {
+    padding-left:10px;
 }
 footer {
-    background-color:#062761;
-    position: absolute;
+    background-color:#4498d3;
+    color:rgb(197, 185, 153);
+    position: fixed;
     bottom:0;
     left:0;
     width:100%;
     height:3.5em;
-    border-top:10px solid #c20016;
+    border-top:4px solid #fdd600;
+    box-shadow: 0 -1px 1px 0 #00000014;
 }
 #copyright {
     color:gainsboro;
     text-align:center;
     padding-top:18px;
 }
+input {
+    border-radius:5px;
+    border:1px solid #4498d3;
+    box-shadow: inset 0px 1px 1px 1px #00000014;
+}
+textarea {
+    border-radius:5px;
+    border:1px solid #fdd600;
+    box-shadow: inset 0px 1px 1px 1px #00000014;
+}
+iframe {
+    border-radius:5px;
+    box-shadow: 0px 1px 2px 2px #00000005;
+}
 .row {
     margin: 8px -16px;
 }
-.row,
-  .row > .column {
-    padding: 8px;
+.row, .row > .column1 {
+    padding: 15px;
+    margin: 0 auto;
 }
-.column {
+.column1 {
     float: left;
-    width: 25%;
+    width: 30%;
+}
+.column2 {
+    float: none;
+    width: 50%;
+    margin:0 auto;
 }
 .row:after {
     content: "";
     display: table;
     clear: both;
 }
-.content {
-    background-color: white;
-    padding: 0px 20px 0 20px;
+#map {
+    float:right;
+    padding-right:5%;
+}
+.contentabout {
+    background-image: url("../images/contentcut.png");
+    background-size:auto;
+    padding: 0px 0 0 0;
     box-shadow:0px 1px 1px 1px #00000025;
     width:960px;
     padding-bottom: 3.5rem;
     margin:0 auto;
     border-radius:7px;
+    bottom:0;
+}
+.content { 
+    background-color:#fff;
+    padding: 0px 0 0 0;
+    box-shadow:0px 1px 1px 1px #00000025;
+    width:960px;
+    padding-bottom: 3.5rem;
+    margin:0 auto;
+    border-radius:7px;
+    bottom:0;
+}
+.contentcontact { 
+    background-color:#fff;
+    padding: 0px 0 0 0;
+    box-shadow:0px 1px 1px 1px #00000025;
+    width:960px;
+    padding-bottom: 3.5rem;
+    margin:0 auto;
+    border-radius:7px;
+    bottom:0;
+    min-height: 350px;
+}
+.contactform {
+    text-align:center;
+    font-weight:600px;
+    float:left;
+    width: 40%;
+    padding:10px 0 10px 0;
+    zoom:1.25;
+}
+#container {
+    padding: 25px 0 0 40px;
 }
 @media screen and (max-width: 900px) {
     .column {
@@ -88,11 +165,15 @@ footer {
 #logo {
     width: 240px;
     height: 75px;
-    background-color: #062761;
+    background-color: #4498d3;
     margin-left: 17.5%;
     text-align: center;
     float: left;
     display: inline-block;
+}
+#logopic {
+    width: auto;
+    height: 80px;
 }
 .topnav {
     background-color: #fff;
@@ -124,6 +205,9 @@ footer {
     vertical-align: middle;
     color: #4a68aa44;
 }
-.pic {
+.picbox {
     object-fit: scale-down;
+}
+.pic {
+    box-shadow: 0px 1px 3px 0px #00000014;
 }
