@@ -1,6 +1,6 @@
 body {
-    background-image: url("/assets/images/bkg.jpg");
-    background-repeat: repeat-y;
+    background-image: url("../images/bkg.jpg");
+    background-size:auto;
     background-color:#fff;
 }
 a {
@@ -11,10 +11,17 @@ h1 {
     color:#4aaaa5;
     border-bottom:5px solid gray;
 }
+#me {
+    width:30%;
+    height:auto;
+}
+.bar {
+    pointer-events:none;
+}
 #floattext {
     
     float: right;
-    width: 500px;
+    width: 68%;
 }
 #pagetitle {
     font-size:30px;
