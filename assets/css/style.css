@@ -153,16 +153,6 @@ iframe {
 #container {
     padding: 25px 0 0 40px;
 }
-@media screen and (max-width: 900px) {
-    .column {
-      width: 50%;
-    }
-}
-@media screen and (max-width: 600px) {
-    .column {
-      width: 100%;
-    }
-}
 .navhead {
     height:75px;
     width:100%;
@@ -290,6 +280,17 @@ iframe {
 }
 @media only screen and (max-width: 700px){
     .modal-content {
+      width: 100%;
+    }
+}
+
+@media screen and (max-width: 900px) {
+    .column {
+      width: 50%;
+    }
+}
+@media screen and (max-width: 600px) {
+    .column {
       width: 100%;
     }
 }
