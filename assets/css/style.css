@@ -190,6 +190,7 @@ iframe {
     font-family:Arial, Helvetica, sans-serif;
     text-transform:capitalize;
     text-align: center;
+    float: right;
 }
   
 .topnav a:hover {
