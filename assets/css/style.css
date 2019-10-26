@@ -117,6 +117,7 @@ iframe {
     margin:0 auto;
     border-radius:7px;
     bottom:0;
+    height: fit-content;
 }
 .content { 
     background-color:#fff;
