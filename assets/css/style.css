@@ -176,7 +176,9 @@ iframe {
     background-color: #fff;
     overflow: hidden;
     height: 75px;
+    margin-right:7%;
     padding:0px 0px 0px 0px;
+    float:right;
 }
   
 .topnav a {
