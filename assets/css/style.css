@@ -176,10 +176,8 @@ iframe {
     background-color: #fff;
     overflow: hidden;
     height: 75px;
-    margin-right:7%;
     padding:0px 0px 0px 0px;
     position:sticky;
-    float:right;
 }
   
 .topnav a {
@@ -283,7 +281,7 @@ iframe {
       width: 100%;
     }
 }
-@media screen and (max-width: 993px) {
+@media screen and (max-width: 1200px) {
     .column {
       width: 50%;
     }
