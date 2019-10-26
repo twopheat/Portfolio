@@ -181,6 +181,8 @@ iframe {
     height: 75px;
     margin-right:7%;
     padding:0px 0px 0px 0px;
+    position:sticky;
+    float:right;
 }
   
 .topnav a {
