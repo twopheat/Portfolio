@@ -45,6 +45,10 @@ p {
     padding-top:20px;
     color:#fdd600;
 }
+.flex-container {
+    flex-direction: column;
+    min-height: 100vh;
+  }
 .ptitle {
     padding-left:10px;
 }
