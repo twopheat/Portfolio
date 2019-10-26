@@ -3,6 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="stylesheet" href="assets/css/style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <title>Brad_J | Portfolio</title>
   </head>
   <header class="navhead">
@@ -23,25 +24,32 @@
       <div class="row">
         <div class="column1">
           <div class="picbox">
-            <img class="pic" src="assets/images/omstc.jpg" alt="OMSTC" style="width:100%">
+            <img class="myImg" src="assets/images/omstc.jpg" alt="OMSTC" style="width:100%">
             <h3>OneManandaSolution</h3>
             <p>This was my first shot at a website for profit. I had just opened my tech consulting business in Atlanta, and I could not afford a website back then. I ran the business in Atlanta for 7 years, gained 540+ happy customers, and cut my teeth on web development and design back in the early 2000's.</p>
             </div>
         </div>
         <div class="column1">
           <div class="picbox">
-          <img class="pic" src="assets/images/jjm.jpg" alt="JudeJohnnyMason" style="width:100%">
-            <h3>JudgeJohnnyMason</h3>
+              <img class="myImg" src="assets/images/jjm.jpg" alt="JudgeJohnnyMason" style="width:100%">
+      <h3>JudgeJohnnyMason</h3>
             <p>I built this site for a Judge running for re-election in Atlanta. It's pure html and very very little css. This was the early days for me. He was re-elected, by the way.</p>
             </div>
         </div>
         <div class="column1">
             <div class="picbox">
-            <img class="pic" src="assets/images/bg.png" alt="TheBandGuard" style="width:100%">
+            <img class="myImg" src="assets/images/bg.png" alt="TheBandGuard" style="width:100%">
               <h3>TheBandGuard</h3>
               <p>This was a wedding band cover that I have patent-pending status on. I sold only two in a year's time. One day I intend to rehash these and push them better.</p>
             </div>
-          </div>        
+          </div>
+          <div class="column1">
+              <div class="picbox">
+              <img class="myImg" src="assets/images/icarenote.png" alt="TheBandGuard" style="width:100%">
+                <h3>iCareNote</h3>
+                <p>iCarenote was my first Start-Up experience. Like most Start-Ups, it went belly up around a year or so in. Good experience, good lessons, good times.</p>
+              </div>
+            </div>                  
         <div class="column1">
           <div class="picbox"><a target="_blank" href="https://orionservers.net">
           <img class="pic" src="assets/images/ogs.jpg" alt="OrionServers" style="width:100%"></a>
@@ -52,7 +60,7 @@
           <div class="picbox"><a target="_blank" href="https://twopheat.github.io/prework-about-me/">
           <img class="pic" src="assets/images/prework.jpg" alt="PreWork" style="width:100%"></a>
             <h3>Bootcamp Prework</h3>
-            <p>This is my About page for out PreWork leading up to the UC Riverside Extension Coding Bootcamp!</p>
+            <p>This is my About page for our PreWork leading up to the UC Riverside Extension Coding Bootcamp!</p>
           </div>
         </div>        
         <div class="column2">
@@ -64,11 +72,43 @@
             </div>
           </div>
       <!-- END GRID -->
+      <div id="myModal" class="modal">
+          <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
+
+          <img class="modal-content" id="img01">
+      </div>
      </div>
     
    </div>
+   <script>
+   
+   var modal = document.getElementById("myModal");
+    var i;
+
+    var img = document.getElementsByClassName("myImg");
+    var modalImg = document.getElementById("img01");
+
+     for(i=0;i< img.length;i++)
+           {    
+        img[i].onclick = function(){
+
+    modal.style.display = "block";
+       modalImg.src = this.src;
+
+ }
+    }
+
+    var span = document.getElementsByClassName("close")[0];
+
+
+    span.onclick = function() { 
+      modal.style.display = "none";
+    }   
+
+   </script>
   </body>
   <footer>
     <p id="copyright">Copyright © TwoPheat</p>
- </footer>
+
+  </footer>
 </html>
