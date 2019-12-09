@@ -21,7 +21,7 @@ $mail = new PHPMailer;
 
  $mail->SMTPAuth = true;          
  $mail->Username = 'twopheat@gmail.com';
- $mail->Password = 'Dean1Dean1!';           
+ $mail->Password = 'sendMail';           
  $mail->SMTPSecure = 'tls';              
  $mail->Port = 587;                      
  $mail->setFrom('admin@precogwest.com', 'Mailer');
