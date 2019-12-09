@@ -20,8 +20,8 @@ $mail = new PHPMailer;
  $mail->Host = 'smtp.gmail.com';
 
  $mail->SMTPAuth = true;          
- $mail->Username = 'twopheat@gmail.com';
- $mail->Password = 'sendMail';           
+ $mail->Username = 'smtpoutward@gmail.com';
+ $mail->Password = 'Newpass1!';           
  $mail->SMTPSecure = 'tls';              
  $mail->Port = 587;                      
  $mail->setFrom('admin@precogwest.com', 'Mailer');
