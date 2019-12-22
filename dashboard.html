@@ -13,7 +13,8 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
     
     <script src="assets/js/script.js"></script>
-    <title>Brad_J | Portfolio</title>
+    <link rel="icon" type="image/png" href="assets/images/favicon.png">
+    <title>Brad.J | Portfolio</title>
   </head>
   
   <body>
@@ -26,7 +27,6 @@
             <ul id="nav-mobile" class="right hide-on-med-and-down">
               <li><a href="index.html">About</a></li>
               <li><a href="portfolio.html">Portfolio</a></li>
-              <li><a href="https://twopheat.github.io/Weather-Dashboard/dashboard.html">Dashboard</a></li>
               <li><a href="contact.html">Contact</a></li>
             </ul>
           </div>
@@ -35,32 +35,54 @@
       <ul class="sidenav" id="mobile-demo">
         <li><a href="index.html">About</a></li>
         <li><a href="portfolio.html">Portfolio</a></li>
-        <li><a href="https://twopheat.github.io/Weather-Dashboard/dashboard.html">Dashboard</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </div>
 
-    <div class="container z-depth-1 white radius-1">
-      <h1 class="ptitle">About Me</h1>
-        <div class="row">
-         <div class="col s12 m6"><img id="me" src="assets/images/meblank.png" alt="Me"/></div>
-         <div class="col s12 m6"><p id="floattext"><p>I have been developing and designing since before Dreamweaver was Adobe. I always did it on the side of my regular jobs so I never considered myself an official developer, until now. Coding Bootcamp has made me realize I have been a Full Stack Designer for a decade. I just never had any official structure or certification, hence no jobs in the industry other than start-ups. By the end of our Boot Camp, all of that will change!  </p>
-          <quote>-Brad Johnston
-<br>
-<br>
-<br>
+<div class="container mt-5">
+    
+    <h1 class="text-white bg-secondary ptitle">Weather Dashboard</h1>
+   
+   <div class="card">
+        
+      <form id="form" class="card-body">
+         <div class="row">
+          <div class="col-sm-4 pt-4 bg-light">
+
+            <!-- form for handling input + create text box for city search-->
+            <div class="form-group">
+              <input type="text" placeholder="Pick a City..." class="form-input form-control" id="city-field">
+              <button type="submit" class="city-search btn btn-default" id="city-search">
+                  <i class="fa fa-search"></i> Search</button>
+              <button class="btn btn-default" id="clear-all">
+                  <i class="fa fa-trash"></i> Clear</button>
+            </div>
+          </form>
 
 
-          </quote>
-         </div>
-       </div>
+              <div>
+                  <label class="col">Search History</label>
+                  <div id="city-list" placeholder="No Query Yet" class="col p-3 bg-white rounded-top border border-bottom1"></div>
+              </div>
+          </div>
+
+        <div class="col-sm-8">
+
+          <!-- output area for city forecasts-->
+              <div id="current-weather" class="col-sm-12 border border-grey shadow-sm rounded-lg pt-5 pb-5 bg-white"></div>
+              <div id="5day-weather" class="col-sm-12 card pt-5 pb-5 bg-white"></div>
+
+
+        </div>
 
     </div>
- 
-  </body>
 
- <footer>
-    <h5 id="copyright"><a class="yellow-text" href="https://github.com/twopheat/" >GitHub</a> | Copyright © TwoPheat | <a class="yellow-text" href="https://www.linkedin.com/in/precogit/" >LinkedIn</a></h5> 
-  </footer>
+   </div>
 
+  </div>
+</body>
+<footer>
+  <h5 id="copyright"><a class="yellow-text" href="https://github.com/twopheat/" >GitHub</a> | Copyright © TwoPheat | <a class="yellow-text" href="https://www.linkedin.com/in/precogit/" >LinkedIn</a></h5>
+
+</footer>
 </html>
