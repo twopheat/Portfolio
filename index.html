@@ -3,46 +3,62 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+    
+    <!-- Compiled and minified CSS -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    <!-- Compiled and minified JavaScript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    
+    <script src="assets/js/script.js"></script>
     <title>Brad_J | Portfolio</title>
   </head>
-  <header class="navhead">
-      <div id="logo">
-          <img id="logopic" src="assets/images/logo.png" alt="Logo"/>
-      </div>
-      <div class="topnav">
-          <a href="contact.html">Contact</a><a class="bar">|</a>
-          <a href="https://twopheat.github.com/Weather-Dashboard/dashboard.html">Dashboard</a><a class="bar">|</a>
-          <a href="portfolio.html">Portfolio</a><a class="bar">|</a>
-          <a href="index.html">About</a>
-          
-      </div>
-      
-  </header>
+  
   <body>
-   
-    <div class="contentabout">
+    <div id="blue" class="block blue">
+      <nav class="pushpin-demo-nav" data-target="blue">
+        <div class="nav-wrapper light-blue">
+          <div class="container">
+            <a href="#" class="brand-logo"><img id="logopic" src="assets/images/logo.png" alt="Logo"/></a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+              <li><a href="index.html">About</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <ul class="sidenav" id="mobile-demo">
+        <li><a href="index.html">About</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+    <div class="container z-depth-1 white radius-1">
       <h1 class="ptitle">About Me</h1>
-     <div class="container">
-       <div class="row"><p></p></div>
-       <div class="row">
-         <div class="col-md-3"><img id="me" src="assets/images/meblank.png" alt="Me"/></div>
-         <div class="col-md-1"><p></p></div>
-         <div class="col-md-6"><p id="floattext"><p>I have been developing and designing since before Dreamweaver was MX. I always did it on the side of my regular jobs so I never considered myself an official developer, until now. Coding Bootcamp has made me realize I have been a Full Stack Designer for a decade. I just never had any official structure or certification, hence no jobs in the industry other than start-ups. By the end of our class, all of that will change!  </p>
-          <quote>-Brad Johnston</quote>
+        <div class="row">
+         <div class="col s12 m6"><img id="me" src="assets/images/meblank.png" alt="Me"/></div>
+         <div class="col s12 m6"><p id="floattext"><p>I have been developing and designing since before Dreamweaver was Adobe. I always did it on the side of my regular jobs so I never considered myself an official developer, until now. Coding Bootcamp has made me realize I have been a Full Stack Designer for a decade. I just never had any official structure or certification, hence no jobs in the industry other than start-ups. By the end of our Boot Camp, all of that will change!  </p>
+          <quote>-Brad Johnston
+<br>
+<br>
+<br>
+
+
+          </quote>
          </div>
        </div>
-     </div>
+
     </div>
-    
-   
+ 
   </body>
 
  <footer>
-    <p id="copyright">Copyright © TwoPheat</p>
- </footer>
-</div>
+    <h5 id="copyright"><a class="yellow-text" href="https://github.com/twopheat/" >GitHub</a> | Copyright © TwoPheat | <a class="yellow-text" href="https://www.linkedin.com/in/precogit/" >LinkedIn</a></h5> 
+  </footer>
+
 </html>

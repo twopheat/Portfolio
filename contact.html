@@ -2,47 +2,88 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="stylesheet" href="assets/css/style.css">
-    <title>Brad_J | Portfolio</title>
-  </head>
-  <header class="navhead">
-      <div id="logo">
-          <img id="logopic" src="assets/images/logo.png" alt="Logo"/>
-      </div>
-    <div class="topnav">
-      <a href="contact.html">Contact</a><a class="bar">|</a>
-      <a href="portfolio.html">Portfolio</a><a class="bar">|</a>
-      <a href="index.html">About</a>
-        
-    </div>
-</header>
-  <body>
-   <div class="contentcontact">
-      <h1 class="ptitle">Contact Me</h1>
-     <div class="contactform">
-     <form action="sendMail.php">
-        Name:<br>
-       <input type="text" name="name" value="">
-       <br>
-        E-mail:<br>
-        <input type="email" name="email" value="">
-        <br>
-       Message:<br>
-        <textarea rows="4" cols="21" name="message"></textarea>
-        <br><br>
-        <input type="submit" value="Submit">
-      </form>
-     </div>
-      <div id="map">
-       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d105913.76640300994!2d-117.46973951976882!3d33.94613802977635!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dca6df7ff47dbb%3A0xf7a1d705135e0ae8!2sRiverside%2C%20CA!5e0!3m2!1sen!2sus!4v1571775525109!5m2!1sen!2sus" width="400" height="300" frameborder="0" style="border:0;" allowfullscreen=""></iframe>
-      </div>
-    <br />
-
-
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     
+    <!-- Compiled and minified CSS -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    
+    <script src="assets/js/script.js"></script>
+    <title>Brad.J | Portfolio</title>
+  </head>
+  
+  <body>
+    <div id="blue" class="block blue">
+      <nav class="pushpin-demo-nav" data-target="blue">
+        <div class="nav-wrapper light-blue">
+          <div class="container">
+            <a href="#" class="brand-logo"><img id="logopic" src="assets/images/logo.png" alt="Logo"/></a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+              <li><a href="index.html">About</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <ul class="sidenav" id="mobile-demo">
+        <li><a href="index.html">About</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+   <div class="container z-depth-1 white radius-1">
+      <h1 class="ptitle">Contact Me</h1>
+    <div class="row grey lighten-5">
+      <div class="col s12">
+      <div class=" col s12 m6">
+        <form action="sendMail.php">
+           Name:<br>
+           <input class="col" type="text" name="name" value="">
+          <br>
+           E-mail:<br>
+           <input type="email" name="email" value="">
+            <br>
+          Message:<br>
+           <textarea rows="4" cols="21" name="message"></textarea>
+           <br><br>
+            <input type="submit" value="Submit">
+        </form>
+     </div>
+      <div class="col s12 m6" id="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d56098.73888552415!2d-117.4761380389308!3d33.95694370446146!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80dcb1c9bda1d65f%3A0x9c267b86d0e7b6cd!2sCentral%20Ave%2C%20California!5e0!3m2!1sen!2sus!4v1576989044896!5m2!1sen!2sus" width="300" height="200" frameborder="0" style="border:0;" allowfullscreen=""></iframe>      
+      </div>
+      <div class="col s12 m6" id="map">
+         
+         <a class="black-text" href="https://github.com/twopheat/" ><h5>My GitHub</h5></a>
+
+      </div>
+      <div class="col s12 m6" id="map">
+        
+        <a class="black-text" href="https://www.linkedin.com/in/precogit/" ><h5>My LinkedIn</h5></a>
+
+     </div>
+     <div class="col s12 m6" id="map">
+        
+        <a class="black-text" href="https://drive.google.com/file/d/1tM2gArCqJwi4Bgz1r7Zv7RR7vbGMIEYr/view?usp=sharing" ><h5>My Resume</h5></a>
+
    </div>
+     <br/>
+    </div>
+    </div>
+  </div>
+
+
+   
   </body>
   <footer>
-    <p id="copyright">Copyright © TwoPheat</p>
- </footer>
+    <h5 id="copyright"><a class="yellow-text" href="https://github.com/twopheat/" >GitHub</a> | Copyright © TwoPheat | <a class="yellow-text" href="https://www.linkedin.com/in/precogit/" >LinkedIn</a></h5>
+
+  </footer>
 </html>

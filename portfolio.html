@@ -2,80 +2,106 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Compiled and minified CSS -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     <link rel="stylesheet" href="assets/css/style.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-    <title>Brad_J | Portfolio</title>
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+    
+    <script src="assets/js/script.js"></script>
+    <title>Brad.J | Portfolio</title>
   </head>
-  <header class="navhead">
-      <div id="logo">
-          <img id="logopic" src="assets/images/logo.png" alt="Logo"/>
-      </div>
-    <div class="topnav">
-      <a href="contact.html">Contact</a><a class="bar">|</a>
-      <a href="portfolio.html">Portfolio</a><a class="bar">|</a>
-      <a href="index.html">About</a>
-        
-    </div>
-  </header>
+  
   <body>
-   <div class="content">
-      <h1 class="ptitle">Portfolio</h1>
+    <div id="blue" class="block blue">
+      <nav class="pushpin-demo-nav" data-target="blue">
+        <div class="nav-wrapper light-blue">
+          <div class="container">
+            <a href="#" class="brand-logo"><img id="logopic" src="assets/images/logo.png" alt="Logo"/></a>
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
+            <ul id="nav-mobile" class="right hide-on-med-and-down">
+              <li><a href="index.html">About</a></li>
+              <li><a href="portfolio.html">Portfolio</a></li>
+              <li><a href="contact.html">Contact</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <ul class="sidenav" id="mobile-demo">
+        <li><a href="index.html">About</a></li>
+        <li><a href="portfolio.html">Portfolio</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+
+
+   <div class="container white radius-1">
+      <h1 class="pb">Portfolio</h1>
       <!-- Portfolio Gallery Grid -->
       <div class="row">
-        <div class="column1">
-          <div class="picbox">
-            <img class="myImg" src="assets/images/omstc.JPG" alt="OMSTC" style="width:100%">
-            <h3>OneManandaSolution</h3>
-            <p>This was my first shot at a website for profit. I had just opened my tech consulting business in Atlanta, and I could not afford a website back then. I ran the business in Atlanta for 7 years, gained 540+ happy customers, and cut my teeth on web development and design back in the early 2000's.</p>
-            </div>
-        </div>
-        <div class="column1">
-          <div class="picbox">
-              <img class="myImg" src="assets/images/jjm.JPG" alt="JudgeJohnnyMason" style="width:100%">
-      <h3>JudgeJohnnyMason</h3>
-            <p>I built this site for a Judge running for re-election in Atlanta. It's pure html and very very little css. This was the early days for me. He was re-elected, by the way.</p>
-            </div>
-        </div>
-        <div class="column1">
-            <div class="picbox">
-            <img class="myImg" src="assets/images/bg.png" alt="TheBandGuard" style="width:100%">
-              <h3>TheBandGuard</h3>
-              <p>This was a wedding band cover that I have patent-pending status on. I sold only two in a year's time. One day I intend to rehash these and push them better.</p>
-            </div>
-          </div>
-        </div>
-        <div class="row">
-          <div class="column1">
-              <div class="picbox">
-              <img class="myImg" src="assets/images/icarenote.png" alt="TheBandGuard" style="width:100%">
-                <h3>iCareNote</h3>
-                <p>iCarenote was my first Start-Up experience. Like most Start-Ups, it went belly up around a year or so in. Good experience, good lessons, good times.</p>
-              </div>
-            </div>                  
-        <div class="column1">
-          <div class="picbox"><a target="_blank" href="https://orionservers.net">
-          <img class="pic" src="assets/images/ogs.JPG" alt="OrionServers" style="width:100%"></a>
-            <h3>OrionServers</h3>
-            <p>This is a new venture I am glad to be a part of. We offer game servers, game slots, and vps for business at some of the lowest prices around. Our hosts are DDOS and power reduntant 24/7. </div>
-        </div>
-        <div class="column1">
-          <div class="picbox"><a target="_blank" href="https://twopheat.github.io/prework-about-me/">
-          <img class="pic" src="assets/images/prework.JPG" alt="PreWork" style="width:100%"></a>
-            <h3>Bootcamp Prework</h3>
-            <p>This is my About page for our PreWork leading up to the UC Riverside Extension Coding Bootcamp!</p>
-          </div>
-        </div>
-      </div>        
-        <div class="row">
-        <div class="column2">
-            <div class="picbox"><a target="_blank" href="http://precogwest.com">
-            <img class="pic" src="assets/images/precog.JPG" alt="Mountains" style="width:100%"></a>  
-            <h3>PrecogWest</h3>
-            <p>This is my current side business. We build websites and mobile applications as well as support IT infrastructure for small to medium businesses. From servers to VOIP phones and everything in between.</p>
+        <div class="col s12">
+        <div class="col sm12">
+            <div class="picbox"><a target="_blank" href="https://team-cbd.github.io/AGT/">
+            <img class="pic" src="assets/images/agt.JPG" alt="Mountains" style="width:100%"></a>  
+            <b>Any Given T</b>
+            <p>This is our first Project in Boot Camp. It is also a part of an upcoming web and mobile application.</p>
 
             </div>
           </div>
         </div>
+      </div>
+      <div class="row">
+        <div class="col 12">
+        <div class="col sm12 m4">
+          <div class="picbox">
+            <img class="myImg" src="assets/images/omstc.JPG" alt="OMSTC" style="width:100%">
+            <b>OneManandaSolution</b>
+            <p>This was my first shot at a website for profit. I had just opened my tech consulting business in Atlanta, and I could not afford a website back then. I ran the business in Atlanta for 7 years, gained 540+ happy customers, and cut my teeth on web development and design back in the early 2000's.</p>
+            </div>
+        </div>
+        <div class="col sm12 m4">
+          <div class="picbox">
+              <img class="myImg" src="assets/images/jjm.JPG" alt="JudgeJohnnyMason" style="width:100%">
+      <b>JudgeJohnnyMason</b>
+            <p>I built this site for a Judge running for re-election in Atlanta. It's pure html and very very little css. This was the early days for me. He was re-elected, by the way.</p>
+            </div>
+        </div>
+        <div class="col sm12 m4">
+            <div class="picbox">
+            <img class="myImg" src="assets/images/bg.png" alt="TheBandGuard" style="width:100%">
+              <b>TheBandGuard</b>
+              <p>This was a wedding band cover that I have patent-pending status on. I sold only two in a year's time. One day I intend to rehash these and push them better.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+        <div class="row">
+          <div class="col sm12 m4">
+              <div class="picbox">
+              <img class="myImg" src="assets/images/icarenote.png" alt="TheBandGuard" style="width:100%">
+                <b>iCareNote</b>
+                <p>iCarenote was my first Start-Up experience. Like most Start-Ups, it went belly up around a year or so in. Good experience, good lessons, good times.</p>
+              </div>
+            </div>                  
+        <div class="col sm12 m4">
+          <div class="picbox"><a target="_blank" href="https://orionservers.net">
+          <img class="pic" src="assets/images/ogs.JPG" alt="OrionServers" style="width:100%"></a>
+            <b>OrionServers</b>
+            <p>This is a new venture I am glad to be a part of. We offer game servers, game slots, and vps for business at some of the lowest prices around. Our hosts are DDOS and power reduntant 24/7. </div>
+        </div>
+        <div class="col sm12 m4">
+          <div class="picbox"><a target="_blank" href="https://twopheat.github.io/prework-about-me/">
+          <img class="pic" src="assets/images/prework.JPG" alt="PreWork" style="width:100%"></a>
+            <b>Bootcamp Prework</b>
+            <p>This is my About page for our PreWork leading up to the UC Riverside Extension Coding Bootcamp!</p>
+          </div>
+        </div>
+      </div>        
+        
       <!-- END GRID -->
       <div id="myModal" class="modal">
           <span class="close" onclick="document.getElementById('myModal').style.display='none'">&times;</span>
@@ -113,7 +139,6 @@
    </script>
   </body>
   <footer>
-    <p id="copyright">Copyright © TwoPheat</p>
-
+    <b id="copyright"><a class="yellow-text" href="https://github.com/twopheat/" >GitHub</a> | Copyright © TwoPheat | <a class="yellow-text" href="https://www.linkedin.com/in/precogit/" >LinkedIn</a></b> 
   </footer>
 </html>
