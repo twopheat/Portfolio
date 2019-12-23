@@ -11,7 +11,7 @@
     <!-- Compiled and minified JavaScript -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
-    
+    <script src="assets/js/moment.js"></script>
     <script src="assets/js/script.js"></script>
     <link rel="icon" type="image/png" href="assets/images/favicon.png">
     <title>Brad.J | Portfolio</title>
@@ -46,20 +46,20 @@
  
   <div class="container mt-5">
     
-    <h1 class="text-white bg-secondary ptitle">Weather Dashboard</h1>
+    
    
    <div class="card">
-        
+    <h1 class="text-white bg-secondary ptitle">Weather Dashboard</h1>
       <form id="form" class="card-body">
          <div class="row">
           <div class="col-sm-4 pt-4 bg-light">
 
             <!-- form for handling input + create text box for city search-->
             <div class="form-group">
-              <input type="text" placeholder="Pick a City..." class="form-input form-control" id="city-field">
-              <button type="submit" class="city-search btn btn-default" id="city-search">
+              <input type="text" placeholder="Pick a City..." class="form-input inputs form-control" id="city-field">
+              <button type="submit" class="city-search blue lighten-1 btn btn-default" id="city-search">
                   <i class="fa fa-search"></i> Search</button>
-              <button class="btn btn-default" id="clear-all">
+              <button class="btn btn-default yellow accent-3 black-text" id="clear-all">
                   <i class="fa fa-trash"></i> Clear</button>
             </div>
           </form>
@@ -73,7 +73,7 @@
 
           <!-- output area for city forecasts-->
               <div id="current-weather" class="col-sm-12 border border-grey shadow-sm rounded-lg pt-5 pb-5 bg-white"></div>
-              <div id="5day-weather" class="col-sm-12 card pt-5 pb-5 bg-white"></div>
+              <div id="fiveday-weather" class="col-sm-12 card pt-5 pb-5 bg-white"></div>
 
 
         </div>
@@ -180,7 +180,7 @@ function fetchData1 (forecast) {
     html += '</div>'                
     
  
-  $('#5day-weather').html(html)
+  $('#fiveday-weather').html(html)
  };
 //-----------------------Get and fetch 2-------------------this one also works, but at one point I tried to embed a function to get UV, also did not work
 function getData2(url, cityName, appId, units) {
@@ -202,13 +202,13 @@ function fetchData2 (weather) {
     //tried to declare lat and lon globally to use it in uv api, no luck
     window.lati2 = lati;
     window.long2 = long;
-    var iconLink0 = "http://openweathermap.org/img/w/" + weather.weather[0].icon + ".png";
+    var iconLink0 = "http://openweathermap.org/img/w/" + weather.weather[1].icon + ".png";
     
     
     console.log(weather)
-    html += '<h4 class="font-weight-bold">' + cityName + ' ' + moment().format('DD-MM-YYYY') + ' <img src="'+ iconLink0 + '"></h4>'
+    html += '<h4 class="font-weight-bold">' + cityName + ' ' + moment().format('MM-DD') + ' <img src="'+ iconLink0 + '"></h4>'
     html += '<div class="row">'
-    html += '<div class="col s12 m2 card z-depth-1 radius-2">Temp: ' + weather.main.temp.toFixed(0) + '°<br>'
+    html += '<div class="col s12 m2 white-text blue lighten-2 card z-depth-1 radius-2">Temp: ' + weather.main.temp.toFixed(0) + '°<br>'
     html += 'Humidity: ' + weather.main.humidity + '<br>'
     html += 'Wind Speed: ' + weather.wind.speed.toFixed(1) + ' MPH <br>'
        

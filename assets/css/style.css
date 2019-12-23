@@ -17,6 +17,12 @@ nav {
     margin:10px;
 
 }
+.inputs {
+    border-bottom: 1px solid #03a9f4!important;
+}
+.inputs:active{
+    border-bottom: 1px solid #ffde16!important;
+}
 a {
     text-decoration: none;
 }
@@ -78,7 +84,7 @@ footer {
     width:100%;
     height:4em;
     border-top:4px solid #fdd600;
-    box-shadow: 0 -1px 1px 0 #00000014;
+    
 
 }
 
@@ -107,6 +113,15 @@ iframe {
 .row, .row > .column1 {
     padding: 15px;
     margin: 0 auto;
+}
+.card.small {
+    height: auto;
+    padding: 1%;
+    margin: 3%;
+    overflow: hidden;
+}
+#fiveday-weather {
+    padding:1%;
 }
 .column1 {
     float: left;
