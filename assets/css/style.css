@@ -194,7 +194,10 @@ iframe {
     padding:0px 0px 0px 0px;
     float:right;
 }
-  
+.social-icons {
+    margin:1%;
+    zoom:1.5;
+}
 .topnav a {
     color: #9b9b9b;
     padding: 27.5px 10px 55px 10px;

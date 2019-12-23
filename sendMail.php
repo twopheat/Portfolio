@@ -28,9 +28,9 @@ $mail = new PHPMailer;
  $mail->addAddress($your_email, 'Name');
  $mail->addAttachment('fileaddress');       
  $mail->isHTML(true);                              
- $mail->Subject = 'Here is the subject';
+ $mail->Subject = 'Portfolio Direct Contact';
  $mail->Body    = $message;
- $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+ $mail->AltBody = 'You have received a message on your Portfolio page.';
 
  if(!$mail->send()) {
     echo 'Message could not be sent.';
