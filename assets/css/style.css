@@ -4,6 +4,9 @@ body {
     background-color:#fff;
     margin:0 0 0 0;
 }
+body::-webkit-scrollbar {
+    display: none;
+}
 nav {
     text-decoration: none;
 }
