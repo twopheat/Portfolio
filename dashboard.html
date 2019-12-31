@@ -73,8 +73,8 @@
        <div class="row">
 
          <!-- output area for city forecasts-->
-             <div id="current-weather" class="col s4"></div>
-             <div id="fiveday-weather" class="col s12"></div>
+             <div id="current-weather" class="col s12 m2"></div>
+             <div id="fiveday-weather" class="col s12 m2"></div>
 
 
        </div>
@@ -169,13 +169,13 @@ function fetchData1 (forecast) {
    var iconLink3 = "http://openweathermap.org/img/w/" + forecast.list[17].weather[0].icon + ".png";
    var iconLink4 = "http://openweathermap.org/img/w/" + forecast.list[25].weather[0].icon + ".png";
    var iconLink5 = "http://openweathermap.org/img/w/" + forecast.list[33].weather[0].icon + ".png";
-   html += '<h4> 5-Day Forecast for ' + forecast.city.name + '</h4><br>';
+   html += '<h4 class="center"> 5-Day Forecast for ' + forecast.city.name + '</h4><br>';
    html += '<div class="row">'
-   html += '<p class="small center col s12 m2 card z-depth-1 radius-2">' + forecast.list[1].dt_txt.split(' ')[0] + '<br> <img width="50" src="'+ iconLink1 + '"> <br>Temp: ' + forecast.list[1].main.temp_max.toFixed(0) + '°<br> Humidity:' + forecast.list[1].main.humidity + '%</p>';
-   html += '<p class="small center col s12 m2 card z-depth-1 radius-2">' + forecast.list[9].dt_txt.split(' ')[0] + '<br> <img width="50" src="'+ iconLink2 + '"> <br>Temp: ' + forecast.list[9].main.temp_max.toFixed(0) + '°<br> Humidity:' + forecast.list[9].main.humidity + '%</p>';
-   html += '<p class="small center col s12 m2 card z-depth-1 radius-2">' + forecast.list[17].dt_txt.split(' ')[0] + '<br> <img width="50" src="'+ iconLink3 + '"> <br>Temp: ' + forecast.list[17].main.temp_max.toFixed(0) + '°<br> Humidity:' + forecast.list[17].main.humidity + '%</p>';
-   html += '<p class="small center col s12 m2 card z-depth-1 radius-2">' + forecast.list[25].dt_txt.split(' ')[0] + '<br> <img width="50" src="'+ iconLink4 + '"> <br>Temp: ' + forecast.list[25].main.temp_max.toFixed(0) + '°<br> Humidity:' + forecast.list[25].main.humidity + '%</p>';
-   html += '<p class="small center col s12 m2 card z-depth-1 radius-2">' + forecast.list[33].dt_txt.split(' ')[0] + '<br> <img width="50" src="'+ iconLink5 + '"> <br>Temp: ' + forecast.list[33].main.temp_max.toFixed(0) + '°<br> Humidity:' + forecast.list[33].main.humidity + '%</p>';
+   html += '<h5 class="small center col s12 m2 card z-depth-1 radius-2">' + forecast.list[1].dt_txt.split(' ')[0] + '<br> <img width="50" src="'+ iconLink1 + '"> <br>Temp: ' + forecast.list[1].main.temp_max.toFixed(0) + '°<br><br> Humidity:' + forecast.list[1].main.humidity + '%<p> </p></h5>';
+   html += '<h5 class="small center col s12 m2 card z-depth-1 radius-2">' + forecast.list[9].dt_txt.split(' ')[0] + '<br> <img width="50" src="'+ iconLink2 + '"> <br>Temp: ' + forecast.list[9].main.temp_max.toFixed(0) + '°<br><br> Humidity:' + forecast.list[9].main.humidity + '%<p> </p></h5>';
+   html += '<h5 class="small center col s12 m2 card z-depth-1 radius-2">' + forecast.list[17].dt_txt.split(' ')[0] + '<br> <img width="50" src="'+ iconLink3 + '"> <br>Temp: ' + forecast.list[17].main.temp_max.toFixed(0) + '°<br><br> Humidity:' + forecast.list[17].main.humidity + '%<p> </p></h5>';
+   html += '<h5 class="small center col s12 m2 card z-depth-1 radius-2">' + forecast.list[25].dt_txt.split(' ')[0] + '<br> <img width="50" src="'+ iconLink4 + '"> <br>Temp: ' + forecast.list[25].main.temp_max.toFixed(0) + '°<br><br> Humidity:' + forecast.list[25].main.humidity + '%<p> </p></h5>';
+   html += '<h5 class="small center col s12 m2 card z-depth-1 radius-2">' + forecast.list[33].dt_txt.split(' ')[0] + '<br> <img width="50" src="'+ iconLink5 + '"> <br>Temp: ' + forecast.list[33].main.temp_max.toFixed(0) + '°<br><br> Humidity:' + forecast.list[33].main.humidity + '%<p> </p></h5>';
    html += '</div>'                
    
 
@@ -205,12 +205,14 @@ function fetchData2 (weather) {
    
    
    console.log(weather)
-   html += '<h4 class="font-weight-bold">' + cityName + ' ' + moment().format('MM-DD') + ' <img src="'+ iconLink0 + '"></h4>'
+   html += '<br>'
+   html += '<h4>' + cityName + ' ' + moment().format('MM-DD') + ' <img src="'+ iconLink0 + '"></h4>'
    html += '<div class="row">'
-   html += '<div class="col white-text blue lighten-2 card z-depth-1 radius-2">Temp: ' + weather.main.temp.toFixed(0) + '°<br>'
+   html += '<div class="col s8 m2 white-text blue lighten-2 card z-depth-1 radius-2 center">Temp: ' + weather.main.temp.toFixed(0) + '°<br>'
+   html += '<p class="red">UV Index: ' + UV.toFixed(2) + '</p>'
    html += 'Humidity: ' + weather.main.humidity + '<br>'
    html += 'Wind Speed: ' + weather.wind.speed.toFixed(1) + ' MPH <br>'
-      
+   html += '<br>'      
  
 
  $('#current-weather').html(html)
@@ -237,9 +239,6 @@ function getData3(url, appid, lat, lon) {
    }
 };
 </script>
-
-
-<footer>
-  <p id="copyright"><a class="yellow-text" href="https://github.com/twopheat/" >GitHub</a> | Copyright © TwoPheat | <a class="yellow-text" href="https://www.linkedin.com/in/precogit/" >LinkedIn</a></p>
-</footer>
+</body>
+</html>
 
