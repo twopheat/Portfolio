@@ -73,8 +73,8 @@
        <div class="row">
 
          <!-- output area for city forecasts-->
-             <div id="current-weather" class="col s12 m2"></div>
-             <div id="fiveday-weather" class="col s12 m2"></div>
+             <div id="current-weather" class="col s12 m6"></div>
+             <div id="fiveday-weather" class="col s12 m12"></div>
 
 
        </div>
@@ -171,11 +171,11 @@ function fetchData1 (forecast) {
    var iconLink5 = "http://openweathermap.org/img/w/" + forecast.list[33].weather[0].icon + ".png";
    html += '<h4 class="center"> 5-Day Forecast for ' + forecast.city.name + '</h4><br>';
    html += '<div class="row">'
-   html += '<h5 class="small center col s12 m2 card z-depth-1 radius-2">' + forecast.list[1].dt_txt.split(' ')[0] + '<br> <img width="50" src="'+ iconLink1 + '"> <br>Temp: ' + forecast.list[1].main.temp_max.toFixed(0) + '°<br><br> Humidity:' + forecast.list[1].main.humidity + '%<p> </p></h5>';
-   html += '<h5 class="small center col s12 m2 card z-depth-1 radius-2">' + forecast.list[9].dt_txt.split(' ')[0] + '<br> <img width="50" src="'+ iconLink2 + '"> <br>Temp: ' + forecast.list[9].main.temp_max.toFixed(0) + '°<br><br> Humidity:' + forecast.list[9].main.humidity + '%<p> </p></h5>';
-   html += '<h5 class="small center col s12 m2 card z-depth-1 radius-2">' + forecast.list[17].dt_txt.split(' ')[0] + '<br> <img width="50" src="'+ iconLink3 + '"> <br>Temp: ' + forecast.list[17].main.temp_max.toFixed(0) + '°<br><br> Humidity:' + forecast.list[17].main.humidity + '%<p> </p></h5>';
-   html += '<h5 class="small center col s12 m2 card z-depth-1 radius-2">' + forecast.list[25].dt_txt.split(' ')[0] + '<br> <img width="50" src="'+ iconLink4 + '"> <br>Temp: ' + forecast.list[25].main.temp_max.toFixed(0) + '°<br><br> Humidity:' + forecast.list[25].main.humidity + '%<p> </p></h5>';
-   html += '<h5 class="small center col s12 m2 card z-depth-1 radius-2">' + forecast.list[33].dt_txt.split(' ')[0] + '<br> <img width="50" src="'+ iconLink5 + '"> <br>Temp: ' + forecast.list[33].main.temp_max.toFixed(0) + '°<br><br> Humidity:' + forecast.list[33].main.humidity + '%<p> </p></h5>';
+   html += '<b class="small center col s12 m2 card z-depth-1 radius-2">' + forecast.list[1].dt_txt.split(' ')[0] + '<br> <img width="50" src="'+ iconLink1 + '"> <br>Temp: ' + forecast.list[1].main.temp_max.toFixed(0) + '°<br><br> Humidity:' + forecast.list[1].main.humidity + '%<p> </p></b>';
+   html += '<b class="small center col s12 m2 card z-depth-1 radius-2">' + forecast.list[9].dt_txt.split(' ')[0] + '<br> <img width="50" src="'+ iconLink2 + '"> <br>Temp: ' + forecast.list[9].main.temp_max.toFixed(0) + '°<br><br> Humidity:' + forecast.list[9].main.humidity + '%<p> </p></b>';
+   html += '<b class="small center col s12 m2 card z-depth-1 radius-2">' + forecast.list[17].dt_txt.split(' ')[0] + '<br> <img width="50" src="'+ iconLink3 + '"> <br>Temp: ' + forecast.list[17].main.temp_max.toFixed(0) + '°<br><br> Humidity:' + forecast.list[17].main.humidity + '%<p> </p></b>';
+   html += '<b class="small center col s12 m2 card z-depth-1 radius-2">' + forecast.list[25].dt_txt.split(' ')[0] + '<br> <img width="50" src="'+ iconLink4 + '"> <br>Temp: ' + forecast.list[25].main.temp_max.toFixed(0) + '°<br><br> Humidity:' + forecast.list[25].main.humidity + '%<p> </p></b>';
+   html += '<b class="small center col s12 m2 card z-depth-1 radius-2">' + forecast.list[33].dt_txt.split(' ')[0] + '<br> <img width="50" src="'+ iconLink5 + '"> <br>Temp: ' + forecast.list[33].main.temp_max.toFixed(0) + '°<br><br> Humidity:' + forecast.list[33].main.humidity + '%<p> </p></b>';
    html += '</div>'                
    
 
