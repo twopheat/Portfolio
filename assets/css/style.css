@@ -16,6 +16,7 @@ body::-webkit-scrollbar {
 #logotext {
     float:left;
     padding-left:2%;
+    padding-top:2%;
 }
 
 nav {
@@ -369,5 +370,7 @@ iframe {
 @media only screen and (max-width: 992px) {
     #logotext {
         float:right;
+        padding-left:2%;
+        padding-top:2%;
     }
     }
