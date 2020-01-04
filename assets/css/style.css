@@ -9,15 +9,10 @@ body::-webkit-scrollbar {
 }
 @font-face {
     font-family: 'ChunkFiveRegular';
-    src: url('http://www.midwinter-dg.com/blog_demos/css-text-shadows/fonts/chunkfive-webfont.eot');
-    src: url('http://www.midwinter-dg.com/blog_demos/css-text-shadows/fonts/chunkfive-webfont.eot?iefix') format('eot'),
-         url('http://www.midwinter-dg.com/blog_demos/css-text-shadows/fonts/chunkfive-webfont.woff') format('woff'),
-         url('http://www.midwinter-dg.com/blog_demos/css-text-shadows/fonts/chunkfive-webfont.ttf') format('truetype'),
-         url('http://www.midwinter-dg.com/blog_demos/css-text-shadows/fonts/chunkfive-webfont.svg#webfont6hibqX7I') format('svg');
-    font-weight: normal;
     font-style: normal;
-
-}
+    font-weight: normal;
+    src: local('ChunkFiveRegular'), url("Chunkfive.woff") format('woff');
+    }
 #logotext {
     float:left;
     padding-left:2%;
@@ -30,6 +25,7 @@ nav {
 	color: #fff;
 	text-shadow: 0px 1px 0px #999, 0px 2px 0px #888, 0px 3px 0px #777, 0px 4px 0px #666, 0px 5px 0px #555, 0px 6px 0px #444;
     font: 40px 'ChunkFiveRegular';
+    
 }
 .headtextblk {
 	color: #000;
