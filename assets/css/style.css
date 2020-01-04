@@ -17,6 +17,7 @@ body::-webkit-scrollbar {
     float:left;
     padding-left:2%;
     padding-top:.5%;
+    padding-right: 23%;
 }
 
 nav {
@@ -372,5 +373,6 @@ iframe {
         float:right;
         padding-left:2%;
         padding-top:.5%;
+        padding-right: 1%;
     }
     }
