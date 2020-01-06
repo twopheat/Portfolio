@@ -12,7 +12,7 @@ body::-webkit-scrollbar {
     font-style: normal;
     font-weight: normal;
     src: local('ChunkFiveRegular'), url("Chunkfive.woff") format('woff');
-    }
+}
 #logotext {
     float:left;
     padding-left:2%;
