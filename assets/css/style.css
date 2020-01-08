@@ -368,7 +368,7 @@ iframe {
       width: 100%;
     }
 }
-@media only screen and (max-width: 992px) {
+@media only screen and (max-width: 994px) {
     #logotext {
         float:right;
         padding-left:2%;
@@ -376,3 +376,11 @@ iframe {
         padding-right: 1%;
     }
     }
+@media only screen and (min-width: 994px) and (max-width:1045px){
+    #logotext {
+        float:right;
+        padding-left:2%;
+        padding-top:.5%;
+        padding-right: 1%;
+    }
+}
