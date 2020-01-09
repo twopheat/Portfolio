@@ -250,7 +250,24 @@ iframe {
     text-align: center;
     float: right;
 }
-  
+.padded {
+    padding:2%;
+}
+.sidenav li>a:hover {
+    background-color: rgba(234, 196, 18, 0.41);
+}
+.switch label input[type=checkbox]:checked+.lever {
+    background-color: #ffeb3b;
+}
+.switch label input[type=checkbox]:checked+.lever:after {
+    background-color: #03a9f4;
+}
+#dropdown1 {
+    position:sticky;
+}
+#dropdown2 {
+    position:sticky;
+}
 .topnav a:hover {
     background-color: rgb(250, 250, 250);
     color: black;
