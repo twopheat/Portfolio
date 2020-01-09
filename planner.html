@@ -18,30 +18,41 @@
     
     <body>
       <div id="blue" class="block blue">
+
         <nav class="pushpin-demo-nav" data-target="blue">
+    
           <div class="nav-wrapper light-blue">
             <div class="container">
               <div id="logotext">
-                <a class="headtext" href="index.html">Brad<a class="headtextblk" href="index.html">|<a class="headtextgold" href="index.html">J</a></a></a>
+                <a class="headtext" href="index.html">Brad<a class="headtextblk" href="index.html">|<a class="headtextgold"
+                      href="index.html">J</a></a></a>
               </div>
               <div>
-              <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
-              <ul id="nav-mobile" class="left hide-on-med-and-down">
-                <li><a href="index.html">About</a></li>
-                <li><a href="portfolio.html">Portfolio</a></li>
-                <li><a href="planner.html">Planner</a></li>
-                <li><a href="dashboard.html">Dashboard</a></li>
-                <li><a href="contact.html">Contact</a></li>
-              </ul>
+                <a href="#" data-target="mobile-demo" class="sidenav-trigger right"><i class="material-icons">menu</i></a>
+                <ul id="nav-mobile" class="left hide-on-med-and-down">
+                  <li><a href="index.html">About</a></li>
+                  <li><a href="portfolio.html">Portfolio</a></li>
+                  <li><a  href="#" class='dropdown-trigger' data-target='dropdown1'>Projects</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                </ul>
               </div>
             </div>
           </div>
         </nav>
+        <ul id='dropdown1' class='dropdown-content blue-text'>
+          <li><a class='blue-text' href="planner.html">Day Planner</a></li>
+          <li><a class='blue-text' href="dashboard.html">Weather Dashboard</a></li>
+          <li><a class='blue-text' href="generator.html">Password Generator</a></li>
+        </ul>
+        <ul id='dropdown2' class='dropdown-content'>
+          <li><a class='blue-text' href="planner.html">Day Planner</a></li>
+          <li><a class='blue-text' href="dashboard.html">Weather Dashboard</a></li>
+          <li><a class='blue-text' href="generator.html">Password Generator</a></li>
+        </ul>
         <ul class="sidenav z-depth-0 transparent" id="mobile-demo">
           <li><a class="btn blue lighten-2" href="index.html">About</a></li>
           <li><a class="btn blue lighten-2" href="portfolio.html">Portfolio</a></li>
-          <li><a class="btn blue lighten-2" href="planner.html">Planner</a></li>
-          <li><a class="btn blue lighten-2" href="dashboard.html">Weather</a></li>
+          <li><a href="#" class='dropdown-trigger btn blue lighten-2' data-target='dropdown2'>Projects</a></li>
           <li><a class="btn blue lighten-2" href="contact.html">Contact</a></li>
         </ul>
       </div>
