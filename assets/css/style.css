@@ -19,9 +19,9 @@ body::-webkit-scrollbar {
     padding-top:.5%;
     padding-right: 23%;
 }
-
-nav {
-    text-decoration: none;
+.carousel-size {
+    height:1500px;
+    top:-150px;
 }
 .headtext {
 	color: #fff;
@@ -294,7 +294,7 @@ iframe {
     border:1px solid gray;
 }
 .myImg:hover {
-    opacity: 0.7;
+    zoom: 2;
 }
 .modal {
     display: none; 
@@ -399,5 +399,11 @@ iframe {
         padding-left:2%;
         padding-top:.5%;
         padding-right: 1%;
+    }
+}
+@media only screen and (min-width: 500px) and (max-width:1045px){
+    .carousel-size {
+        height:800px;
+        top:-150px;
     }
 }
