@@ -19,10 +19,7 @@ body::-webkit-scrollbar {
     padding-top:.5%;
     padding-right: 23%;
 }
-.carousel-size {
-    height:1500px;
-    top:-300px;
-}
+
 .headtext {
 	color: #fff;
 	text-shadow: 0px 1px 0px #999, 0px 2px 0px #888, 0px 3px 0px #777, 0px 4px 0px #666, 0px 5px 0px #555, 0px 6px 0px #444;
@@ -203,7 +200,9 @@ iframe {
     padding:10px 0 10px 0;
     zoom:1.25;
 }
-
+nav .nav-wrapper {
+    z-index: 999!important;
+}
 .navhead {
     height:75px;
     width:100%;
@@ -401,9 +400,15 @@ iframe {
         padding-right: 1%;
     }
 }
-@media only screen and (min-width: 500px) and (max-width:1045px){
+@media only screen and (min-width: 500px) and (max-width:1440px){
     .carousel-size {
         height:800px;
         top:-280px;
+    }
+}
+@media screen and (min-width: 1440px) {
+    .carousel-size {
+        height:1500px;
+        top:-500px;
     }
 }
