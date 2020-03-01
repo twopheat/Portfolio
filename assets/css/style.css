@@ -19,7 +19,19 @@ body::-webkit-scrollbar {
     padding-top:.5%;
     padding-right: 23%;
 }
-
+p .darkmode--activated {
+    color:#fff;
+}
+.darkmode-background {
+    background: transparent;
+    background-image: url(../images/bkggold.png)!important;
+}
+.darkmode-layer--button {
+    bottom: 10%!important;
+}
+.darkmode-toggle {
+    bottom: 10%!important;
+}
 .headtext {
 	color: #fff;
 	text-shadow: 0px 1px 0px #999, 0px 2px 0px #888, 0px 3px 0px #777, 0px 4px 0px #666, 0px 5px 0px #555, 0px 6px 0px #444;
