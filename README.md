@@ -5,7 +5,7 @@ This is my main Portfolio. It is simple and static for all the right reasons and
 
 ## Deployment
 
-Add additional notes about how to deploy this on a live system
+Static
 
 ## Built With
 
