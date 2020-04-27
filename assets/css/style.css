@@ -345,8 +345,10 @@ nav .nav-wrapper {
 }
 
 .pic {
-	box-shadow: 0px 1px 3px 0px #00000014;
-	border-radius: 5px;
+    box-shadow: 0px 1px 3px 0px #00000014;
+    border-radius: 5px;
+    max-height: 400px;
+    max-width: 600px;
 }
 
 .pic:hover {
